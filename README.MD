@@ -7,7 +7,7 @@ Stack: Python 3.7.1 / PostgreSQL
 
 1. Install dependences
 ```
-pip install -r requirements
+pip install -r requirements.txt
 ```
 
 2. Create local settings file (example: clinicfiles/settings_local.py) and set database conection data
@@ -45,7 +45,7 @@ Access to record enpoint
 http://localhost:8000/demo/v1/accounts/{id}/record
 ```
 
-If {id} is equal to values 2, 3 or 4 get the next json response
+If {id} is equal to values 2, 3 or 4 get the json response like this:
 
 ```
 {
@@ -66,7 +66,7 @@ If {id} is equal to values 2, 3 or 4 get the next json response
 }
 ```
 
-A 404 Not Found status error is return if {id} is not equal to designed values also the above json response
+A 404 Not Found status error is return if {id} is not equal to designed values also the above json response:
 
 ```
 {
